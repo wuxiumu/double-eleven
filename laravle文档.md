@@ -1,0 +1,37 @@
+- 数据库
+    - 
+    -   
+    -   
+    - 
+
+- Eloquent ORM
+    - 
+    -   
+    -   
+    - 
+
+- 测试
+    - 
+    -   
+    -   
+    - 
+## 数据库
+- 配置信息
+    - config/database.php
+- 数据库读写分离  
+    - read 
+    - write
+- 使用多数据库连接 
+    - $users = DB::connection('foo')->select(...);
+    - $pdo = DB::connection()->getPdo();
+- 运行原生 SQL 语句    
+    - DB::select('select * from users where active = ?', [1]);
+    - DB::select('select * from users where id = :id', ['id' => 1]);
+    - DB::insert('insert into users (id, name) values (?, ?)', [1, 'Dayle']);
+    - DB::update('update users set votes = 100 where name = ?', ['John']);
+    - DB::delete('delete from users');
+    - DB::statement('drop table users');
+    - DB::beginTransaction();
+    - DB::rollBack();
+    - DB::commit();
+-     
