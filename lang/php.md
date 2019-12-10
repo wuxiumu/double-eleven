@@ -1,3 +1,8 @@
+- 闭包（Closure）
+- 
+
+
+
 
 php的闭包（Closure）也就是匿名函数。是PHP5.3引入的。
 
